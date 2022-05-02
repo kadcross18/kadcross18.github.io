@@ -1,0 +1,78 @@
+/* FAQ Specific Styles */
+
+#faq-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.5rem;
+    margin-bottom: 8.5rem;
+    background: none;
+    border-bottom: 1px dotted #b12895;
+}
+
+#faq-title span {
+    font-size: 4.5rem;
+    font-family: 'Rubik', serif;
+    color: hsl(196, 71%, 60%);
+    text-shadow: 0px 0px 6px red;
+}
+
+@media screen and (max-width: 450px) {
+    #faq-title span {
+        font-size: 3.5rem;
+    }
+}
+
+.faq-sections {
+    width: 60%;
+    margin: 5rem auto 8rem auto;
+    border-top: 1px dotted #b12895;
+    border-bottom: 1px dotted #b12895;
+}
+
+@media screen and (max-width: 450px){
+    .faq-sections {
+        width: 90%;
+        margin: 3rem auto;
+    }
+}
+
+.faq-sections:nth-of-type(1) {
+    border-top: none;
+}
+
+.faq-sections:last-of-type {
+    border-bottom: none;
+    padding-bottom: 3rem;
+}
+
+.faq-sections p {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.faq-sections h2  {
+    text-align: left;
+    color: hsl(196, 71%, 50%);
+    font-family: 'Rubik Mono One';
+    font-weight: lighter;
+    margin-top: 2rem;
+}
+
+.faq-sections a:link {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+.faq-sections a:visited {
+    color:purple;
+}
+
+.faq-sections a:hover {
+    color: gray;
+    font-style: italic;
+}
