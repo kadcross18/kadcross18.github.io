@@ -151,3 +151,17 @@
     font-size: 1rem;
     line-height: 1.75rem;
 }
+
+@media screen and (max-width: 1000px) {
+    .overlay-text {
+        font-size: 0.5rem;
+        line-height: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .overlay-text {
+        font-size: 0.4rem;
+        line-height: 0.75rem;
+    }
+}
