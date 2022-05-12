@@ -1,0 +1,218 @@
+/*Awards Specific Styles */
+
+#alt-awards-intro {
+    display: none;
+}
+
+.alt-awards-descript {
+    display: none;
+}
+
+#awards-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.5rem;
+    margin-bottom: 8.5rem;
+    background: none;
+    border-bottom: 1px dotted #b12895;
+}
+
+#awards-title h2 {
+    font-size: 4.5rem;
+    font-family: 'Rubik', serif;
+    color: hsl(196, 71%, 60%);
+    text-shadow: 0px 0px 6px red;
+}
+
+#awards-title img {
+    height: 3.5rem;
+    width: auto;
+    margin-left: 2rem;
+    padding-bottom: 0.25rem;
+}
+
+@media screen and (max-width: 700px) {
+    #awards-title h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #awards-title {
+        margin-bottom: 4.25rem;
+    }
+    #awards-title h2 {
+        font-size: 2.5rem;
+    }
+    #awards-title img {
+        display: none;
+    }
+    #awards-intro {
+        display: none;
+    }
+    #alt-awards-intro {
+        display: block;
+        position: relative;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    .overlay {
+        visibility: hidden;
+    }
+    .alt-awards-descript {
+        display: block;
+        position: relative;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #awards-title h2 {
+        font-size: 3rem;
+    }
+}
+
+#awards-intro {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: hsl(0, 10%, 20%);
+}
+
+#all-awards-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    padding-bottom: 5%;
+}
+
+.single-award-container {
+    padding: 5rem;
+    margin: 12rem auto;
+    background-color: #BF5D54;
+    border-radius: 24px;
+    background: url(../Images/awards-background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 550px) {
+.single-award-container {
+    margin-bottom: 2rem;
+    margin-top: 8rem;
+    }
+}
+
+.single-award-container:nth-of-type(1) {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 760px) {
+    .single-award-container {
+        padding: 2rem;
+    }
+}
+
+.single-award-container h3 {
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    padding-top: 5rem;
+    font-family: 'Rubik Mono One';
+    font-size: 2.5rem;
+    color: hsl(165, 100%, 50%);
+    text-shadow: hsl(0, 0%, 0%, 0.40) 0px 14px 4px;
+    background-color: none;
+}
+
+@media screen and (max-width: 840px) {
+    .single-award-container h3 {
+        font-size: 1.5rem;
+        padding-top: 3.5rem;
+    }
+    #awards-title {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #awards-title {
+        width: 85%;
+    }
+}
+
+.awards-img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.overlay-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsl(0, 0%, 100%, 0.90);
+    border-radius: 12px;
+}
+
+.overlay-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay span {
+    color: hsl(0, 0%, 0%, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-text {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .overlay-text {
+        font-size: 0.5rem;
+        line-height: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .overlay-text {
+        font-size: 0.4rem;
+        line-height: 0.75rem;
+    }
+}
